@@ -12,7 +12,12 @@ open tictactoe.html
 
 ## Git workflow
 
-Every meaningful change must be committed and pushed to GitHub (`IsaacOfsow/tic-tac-toe`). Stage specific files, write a clean commit message, then push.
+**Commit and push after every meaningful change.** Never leave a session with uncommitted work. This ensures we can always revert to a known-good state and never lose progress.
+
+- Commit after each logical unit of work — a new feature, a bug fix, a styling change, a refactor. Don't batch unrelated changes into one commit.
+- Stage specific files by name, not `git add -A`.
+- Write a clean, descriptive commit message: a short subject line (what changed), optional body (why).
+- Push immediately after every commit — local commits alone are not enough.
 
 ```bash
 git add tictactoe.html
@@ -21,6 +26,8 @@ git commit -m "short subject line
 Optional body explaining why."
 git push
 ```
+
+Remote: `https://github.com/IsaacOfsow/tic-tac-toe` (branch `main`)
 
 ## Architecture
 
